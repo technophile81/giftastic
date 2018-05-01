@@ -150,3 +150,13 @@ p.card-text {
         margin-right: 2px;
     }
 }
+@media (max-width: 576px) {
+    h1,
+    i.fa-smile {
+        font-size: 18px;
+        margin-right: 2px;
+    }
+    .card-columns {
+        column-count: 1;
+    }
+}
