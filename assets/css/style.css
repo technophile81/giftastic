@@ -11,24 +11,29 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
-
-background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-
-color: #fff;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    color: #fff;
     font-family: "Montserrat", sans-serif;
     margin-top: 30px;
+    
 }
 
 .gif-wrapper {
     width: 50%;
+    transition: all .15s ease-in-out;
 }
 
-h1, i.fa-smile {
+.gif-wrapper:hover { 
+    transform: scale(1.05);
+}
+
+h1,
+i.fa-smile {
     font-weight: 700;
     font-size: 28px;
     display: inline-block;
     text-transform: uppercase;
-    background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+    background: linear-gradient(to bottom, rgba(254, 255, 255, 1) 0%, rgba(221, 241, 249, 1) 35%, rgba(160, 216, 239, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -38,7 +43,6 @@ h1, i.fa-smile {
     padding-top: 0.1em;
     text-shadow: 0.05em 0.05em 0 rgba(255, 255, 255, 0.2);
 }
-
 
 h2 {
     font-size: 12px;
@@ -68,11 +72,16 @@ p.card-text {
 }
 
 #buttons-view button:hover {
-    background-color: rgba(160,216,239,1);
+    background-color: rgba(160, 216, 239, 1);
 }
 
-#add-buttons { background: rgba(160,216,239,1); }
-#add-buttons:hover { background: rgba(160,216,239,0.8); }
+#add-buttons {
+    background: rgba(160, 216, 239, 1);
+}
+
+#add-buttons:hover {
+    background: rgba(160, 216, 239, 0.8);
+}
 
 /* #Graphite Flat Button
 ==================================================*/
@@ -133,8 +142,11 @@ p.card-text {
         column-count: 5;
     }
 }
+
 @media (max-width: 768px) {
-
-    h1, i.fa-smile { font-size: 18px; margin-right: 2px;}
-
+    h1,
+    i.fa-smile {
+        font-size: 18px;
+        margin-right: 2px;
+    }
 }
