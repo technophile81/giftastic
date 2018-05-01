@@ -11,8 +11,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
-   /* background: rgba(0, 0, 0) url("../images/classy_fabric.png");
-*/
+
 background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 
 color: #fff;
@@ -108,7 +107,8 @@ p.card-text {
     border: 2px solid red;
 }
 
-
+/* Media Queries
+==================================================*/
 
 @media (min-width: 576px) {
     .card-columns {
